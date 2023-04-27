@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto78</title>
+    <link rel="styesheet" href="style.css">
+</head>
+<body class="tela">
+    <img src="http://cdn5.colorir.com/desenhos/color/201730/dia-do-pai-festas-dia-do-pai-pintado-por-craudia-1390157.jpg" id="imagens">
+    <h4 id="nomes">Marcelo Bueno</h4>
+    <button onclick="update();">proximo</button>
+
+    <script>
+        var imagens=["http://cdn5.colorir.com/desenhos/color/201730/dia-do-pai-festas-dia-do-pai-pintado-por-craudia-1390157.jpg",
+    "https://static.vecteezy.com/ti/vetor-gratis/p2/2204296-a-mae-esta-abracando-sua-filha-pequena-estilo-desenho-ilustracoes-desenho-a-mao-vetor.jpg",
+    "https://thumbs.dreamstime.com/b/vov%C3%B4-bonito-106527138.jpg",
+    "https://thumbs.dreamstime.com/b/desenhos-animados-da-av%C3%B3-84038663.jpg"];
+
+        var nomes=["Marcelo Bueno","Patricia Bacan","Beto","Madalena bacan"];
+
+        var  i= 0;
+
+        function update(){
+            i++;
+            var numeros_familia= 5;
+
+            if(i>numeros_familia){
+                i=0;
+            }
+            var mudar_imagem= imagens[i];
+            var mudar_nome= nomes[i];
+
+            document.getElementById("imagens").src= mudar_imagem;
+            document.getElementById("nomes").innerHTML= mudar_nome;
+        }
+    </script>
+</body>
+
+
